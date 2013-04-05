@@ -1,5 +1,6 @@
 # /usr/bin/env ruby
 # Basically a super small app
+require 'bundler/setup'
 require 'sinatra'
 
 
