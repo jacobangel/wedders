@@ -1,1 +1,37 @@
-abbout
+<h1>Let Us Know!</h1>
+<p class='lead'>It's typically customary to let the bride and groom know that you're attending.</p>
+<p>Fill out the form below. It will send us a quick email.</p>
+<form action="rsvp" method="post" class='form-horizontal'>
+    <legend>RSVP</legend>
+    <div class='control-group'>
+        <label class="control-label" >Name </label>
+        <div class='controls'>
+            <input type="text" name="name" placeholder="Name" >
+        </div>
+    </div>
+
+    <div class='control-group'>
+        <label  class="control-label"  for="guests">Guests</label>
+        <div class='controls'>
+            <select name='guests'>
+                <option value='0'>0</option>
+                <option value='1'>1</option>
+            </select>
+        </div>
+    </div>
+
+    <div class='control-group'>
+        <label  class="control-label" >Any Their Name? </label>
+        <div class='controls'>
+            <input type="text" name='plus-one' placeholder="Moocher's Moniker">
+
+        </div>
+    </div>
+
+    <div class='control-group'>
+        <div class='controls'>
+            <button type="submit" class='btn'>Reset</button>
+            <button type="submit" class='btn btn-primary'>RSVP</button>
+        </div>
+    </div>
+</form>

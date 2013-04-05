@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang='en'>
 <head>
 	<title><%= @title %></title>
 	<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
@@ -13,24 +13,23 @@
 	<script src="/scripts/site.js"></script>
 </head>
 <body class='page <%= @body_class %>'>
-<div class='container-fluid'>
-	<header>
-		<%= render :partial => 'header' %>
-	</header>
-</div>
-<div class='container-fluid'>
-<div class='row-fluid'>
-	<div class='span9'>
-		<%= yield %>
+	<%= render :partial => 'nav' %>
+	<%= render :partial => 'header' %>
+	<div class='container main'>
+		<div class='row'>
+			<div class='span9'>
+				<div class='content'>
+				<%= yield %>
+				</div>
+			</div>
+			<div class='span3'>
+				<%= render :partial => 'sidebar' %>
+			</div>
+		</div>
+		<footer>
+			<%= render :partial => 'footer' %>
+		</footer>
 	</div>
-	<div class='span3'>
-		<%= render :partial => 'sidebar' %>
-	</div>
-</div>
-<footer>
-	<%= render :partial => 'footer' %>
-</footer>
-</div>
 
 </body>
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang='en'>
 <head>
 	<title><%= @title %></title>
 	<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
@@ -13,30 +13,20 @@
 	<script src="/scripts/site.js"></script>
 </head>
 <body class='splash page-home'>
-<div class='wrapper'>
-	<div class='container-fluid'>
-<header>
-	<div class='navbar'>
-		<div class='navbar-inner'>
-			<ul class='nav'>
-			    <li class='home'><a href='/'>Home</a></li>
-			    <li class='about'><a href='/about'>About</a></li>
-			    <li class='who'><a href='/who'>Who</a></li>
-			    <li class='details'><a href='/details'>Details</a></li>
-			</ul>
+	<div class='wrapper'>
+		<div class='container-fluid'>
+			<header>
+				<!-- <%= render :partial => 'nav' %> -->
+			</header>
+			<div class='row'>
+				<div class='span9'>
+					<%= yield %>
+				</div>
+			</div>
+			<footer>
+				<%= render :partial => 'footer' %>
+			</footer>
 		</div>
 	</div>
-</header>
-<div class='row'>
-	<div class='span9'>
-	<%= yield %>
-</div>
-</div>
-<footer>
-</footer>
-</div>
-	</div>
-
 </body>
-
 </htmL>

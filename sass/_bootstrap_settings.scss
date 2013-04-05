@@ -24,11 +24,12 @@
 // Colors
 // **********************
 // $blue: ;
-// $green: ;
+$green: #C7C8AE;
 // $red: ;
 // $yellow: ;
 // $orange: ;
-// $pink: ;
+$pink: #c7a3aa;
+$lightPink: #f0dde0;
 // $purple: ;
 
 // **********************
@@ -58,7 +59,7 @@
 // $baseFontFamily: ;
 // $baseLineHeight: ;
 // $altFontFamily: ;
-// $headingsFontFamily: ;
+ $headingsFontFamily: 'Julius Sans One', sans-serif;;
 // $headingsFontWeight: ;
 // $headingsColor: ;
 // $fontSizeLarge: ;
@@ -91,5 +92,5 @@
 // $inputBorderRadius: ;
 // $inputDisabledBackground: ;
 // $formActionsBackground: ;
-// $btnPrimaryBackground: ;
-// $btnPrimaryBackgroundHighlight: ;
+ $btnPrimaryBackground: $pink;
+ $btnPrimaryBackgroundHighlight: darken($pink, 10%);
