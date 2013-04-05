@@ -5883,7 +5883,7 @@ body {
   background-color: #0088cc;
 }
 
-.page-about .nav .about > a {
+.page-contact-us .nav .contact-us > a {
   color: white;
   background-color: #0088cc;
 }
@@ -5894,6 +5894,21 @@ body {
 }
 
 .page-details .nav .details > a {
+  color: white;
+  background-color: #0088cc;
+}
+
+.page-rsvp .nav .rsvp > a {
+  color: white;
+  background-color: #0088cc;
+}
+
+.page-registry .nav .registry > a {
+  color: white;
+  background-color: #0088cc;
+}
+
+.page-prologue .nav .prologue > a {
   color: white;
   background-color: #0088cc;
 }

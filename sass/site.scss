@@ -66,9 +66,12 @@ body {
 
 
 @include active-nav-link("who");
-@include active-nav-link("about");
+@include active-nav-link("contact-us");
 @include active-nav-link("home");
 @include active-nav-link("details");
+@include active-nav-link("rsvp");
+@include active-nav-link("registry");
+@include active-nav-link("prologue");
 
 
 @media screen and (min-width: 428px) {

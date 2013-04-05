@@ -16,10 +16,10 @@ get '/' do
 	erb :index, :layout => :splash
 end
 
-get '/about' do
-	@title = "About | #{BASE_TITLE}"
-    @body_class = "page-about"
-	erb :about
+get '/prologue' do
+	@title = "That Which Came Before | #{BASE_TITLE}"
+    @body_class = "page-prologue"
+	erb :prologue
 end
 
 get '/details' do
@@ -34,6 +34,17 @@ get '/who' do
     erb :who
 end
 
+get '/registry' do
+    @title = "Lavish Us with Gifts | #{BASE_TITLE}"
+    @body_class = "page-registry"
+    erb :registry
+end
+
+get '/rsvp' do
+    @title = "Répondez s'il vous plaît | #{BASE_TITLE}"
+    @body_class = "page-rsvp"
+    erb :rsvp
+end
 
 helpers do
 	def render(*args)
