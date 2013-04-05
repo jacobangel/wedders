@@ -1,4 +1,5 @@
 # /usr/bin/env ruby
+# encoding: utf-8
 # Basically a super small app
 require 'bundler/setup'
 require 'sinatra'
