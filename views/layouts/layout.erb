@@ -12,16 +12,23 @@
 	<script src="/scripts/jquery.fittext.js"></script>
 	<script src="/scripts/site.js"></script>
 </head>
-<body class='splash'>
-<div class='wrapper'>
-<header>
-</header>
-<div class='row'>
+<body class='page <%= @body_class %>'>
+<div class='container-fluid'>
+	<header>
+		<%= render :partial => 'header' %>
+	</header>
+</div>
+<div class='container-fluid'>
+<div class='row-fluid'>
 	<div class='span9'>
-	<%= yield %>
+		<%= yield %>
+	</div>
+	<div class='span3'>
+		<%= render :partial => 'sidebar' %>
 	</div>
 </div>
 <footer>
+	<%= render :partial => 'footer' %>
 </footer>
 </div>
 
