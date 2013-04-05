@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../../sass/screen.scss */
+/* line 8, ../../sass/site.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   background: white url("/images/cover2_mobile.jpg") center center no-repeat;
@@ -80,23 +80,23 @@ body {
   -o-background-size: cover;
 }
 
-/* line 22, ../../sass/screen.scss */
-header {
+/* line 22, ../../sass/site.scss */
+.row {
   position: absolute;
   bottom: 10%;
   left: 10%;
   width: 90%;
 }
 
-/* line 28, ../../sass/screen.scss */
-.section {
+/* line 29, ../../sass/site.scss */
+.span9 {
   position: absolute;
   bottom: 5%;
   left: 10%;
-  width: 35%;
+  width: 90%;
 }
 
-/* line 34, ../../sass/screen.scss */
+/* line 36, ../../sass/site.scss */
 h1, h2 {
   font-family: 'Julius Sans One', sans-serif;
   color: #eee;
@@ -107,29 +107,34 @@ h1, h2 {
   line-height: 1.1;
 }
 
-/* line 44, ../../sass/screen.scss */
+/* line 46, ../../sass/site.scss */
 h1 {
   font-size: 7em;
 }
 
-/* line 48, ../../sass/screen.scss */
+/* line 50, ../../sass/site.scss */
 h2 {
   font-size: 9em;
 }
-
-/* line 52, ../../sass/screen.scss */
+/* line 53, ../../sass/site.scss */
 h2 > span {
   display: block;
 }
 
-@media screen and (min-width: 600px) {
-  /* line 57, ../../sass/screen.scss */
+@media screen and (min-width: 428px) {
+  /* line 59, ../../sass/site.scss */
+  body {
+    background-image: url(/images/cover2_medium.jpg);
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 65, ../../sass/site.scss */
   body {
     background-image: url(/images/cover2_large.jpg);
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 63, ../../sass/screen.scss */
+  /* line 71, ../../sass/site.scss */
   body {
     background-image: url(/images/cover2.jpg);
   }
