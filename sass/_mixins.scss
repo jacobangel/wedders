@@ -1,9 +1,19 @@
 @mixin active-nav-link($class) {
     .page-#{$class} {
         .nav {
-            .#{$class} > a{
+            .#{$class} > a {
                 color: white;
+
                 background-color: $linkColor;
+					i {
+	            	background-image: image-url("glyphicons-halflings-white.png");
+	            }
+
+	            &:hover {
+	            	i {
+	            	background-image: image-url("glyphicons-halflings.png");
+	            	}
+	            }
             }
         }
     }

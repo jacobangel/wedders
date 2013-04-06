@@ -2112,7 +2112,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url(/public/images/glyphicons-halflings.png?1365206953);
+  background-image: url(/images/glyphicons-halflings.png?1365212797);
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2136,7 +2136,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url(/public/images/glyphicons-halflings-white.png?1365206953);
+  background-image: url(/images/glyphicons-halflings-white.png?1365212833);
 }
 
 .icon-glass {
@@ -5885,44 +5885,112 @@ body {
 .main > .row h1 {
   margin: .5em inherit;
 }
+.main > .row .players li {
+  font-family: Minion, "Minion Pro", "Times New Roman", serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.main > .row .players li .role {
+  font-variant: normal;
+  text-transform: none;
+}
 
 .navbar .navbar-inner {
   background: #f0dde0;
+}
+
+.main > footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: .5em;
+  padding-top: 1em;
+}
+.main > footer p {
+  color: #eee;
+  text-align: right;
+  font-size: 90%;
+  text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.7);
+}
+.main > footer p:hover {
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
 }
 
 .page-who .nav .who > a {
   color: white;
   background-color: #0088cc;
 }
+.page-who .nav .who > a i {
+  background-image: url('/images/glyphicons-halflings-white.png?1365212833');
+}
+.page-who .nav .who > a:hover i {
+  background-image: url('/images/glyphicons-halflings.png?1365212797');
+}
 
 .page-contact-us .nav .contact-us > a {
   color: white;
   background-color: #0088cc;
+}
+.page-contact-us .nav .contact-us > a i {
+  background-image: url('/images/glyphicons-halflings-white.png?1365212833');
+}
+.page-contact-us .nav .contact-us > a:hover i {
+  background-image: url('/images/glyphicons-halflings.png?1365212797');
 }
 
 .page-home .nav .home > a {
   color: white;
   background-color: #0088cc;
 }
+.page-home .nav .home > a i {
+  background-image: url('/images/glyphicons-halflings-white.png?1365212833');
+}
+.page-home .nav .home > a:hover i {
+  background-image: url('/images/glyphicons-halflings.png?1365212797');
+}
 
 .page-details .nav .details > a {
   color: white;
   background-color: #0088cc;
+}
+.page-details .nav .details > a i {
+  background-image: url('/images/glyphicons-halflings-white.png?1365212833');
+}
+.page-details .nav .details > a:hover i {
+  background-image: url('/images/glyphicons-halflings.png?1365212797');
 }
 
 .page-rsvp .nav .rsvp > a {
   color: white;
   background-color: #0088cc;
 }
+.page-rsvp .nav .rsvp > a i {
+  background-image: url('/images/glyphicons-halflings-white.png?1365212833');
+}
+.page-rsvp .nav .rsvp > a:hover i {
+  background-image: url('/images/glyphicons-halflings.png?1365212797');
+}
 
 .page-registry .nav .registry > a {
   color: white;
   background-color: #0088cc;
 }
+.page-registry .nav .registry > a i {
+  background-image: url('/images/glyphicons-halflings-white.png?1365212833');
+}
+.page-registry .nav .registry > a:hover i {
+  background-image: url('/images/glyphicons-halflings.png?1365212797');
+}
 
 .page-prologue .nav .prologue > a {
   color: white;
   background-color: #0088cc;
+}
+.page-prologue .nav .prologue > a i {
+  background-image: url('/images/glyphicons-halflings-white.png?1365212833');
+}
+.page-prologue .nav .prologue > a:hover i {
+  background-image: url('/images/glyphicons-halflings.png?1365212797');
 }
 
 @media screen and (min-width: 428px) {
