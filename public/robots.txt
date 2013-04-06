@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /who
+Disallow: /details
+Disallow: /prologue
+Disallow: /rsvp
+Disallow: /registry
+Disallow: /images/
+Disallow: /scripts/
+Disallow: /css/
