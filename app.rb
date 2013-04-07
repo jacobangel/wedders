@@ -3,7 +3,7 @@
 # Basically a super small app
 require 'bundler/setup'
 require 'sinatra'
-
+require_relative 'helpers'
 
 set :public_folder, File.dirname(__FILE__) + '/public'
 set :views, ['views/partials', 'views/pages', 'views/layouts', 'views']
@@ -59,17 +59,4 @@ post '/rsvp' do
 	end
 
 	erb :rsvp, :locals => {:message => { :message => message, :type => type } }
-end
-
-helpers do
-	def render(*args)
-		if args.first.is_a?(Hash) && args.first.keys.include?(:partial)
-			return erb "#{args.first[:partial]}".to_sym, :layout => false
-		else
-			super
-		end
-	end
-	def find_template(views, name, engine, &block)
-		Array(views).each { |v| super(v, name, engine, &block) }
-	end
 end
