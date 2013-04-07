@@ -47,6 +47,20 @@ get '/rsvp' do
 	erb :rsvp
 end
 
+post '/rsvp' do
+	name = params[:name]
+	guests = params[:guests]
+	guests = params[:plusones]
+	validation = params[:bridename]
+
+	if not /sandy|sandra/i === validation then 
+		type = "error"
+		message = "Sorry, you did not pass the Voight-Kampff. Please re-enter the bride's name to submit the form."
+	end
+
+	erb :rsvp, :locals => {:message => { :message => message, :type => type } }
+end
+
 helpers do
 	def render(*args)
 		if args.first.is_a?(Hash) && args.first.keys.include?(:partial)

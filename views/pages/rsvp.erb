@@ -3,6 +3,11 @@
 <p>Fill out the form below. It will send us a quick email.</p>
 <form action="rsvp" method="post" class='form-horizontal'>
     <legend>RSVP</legend>
+    <% if message %>
+        <div class='alert alert-<%= message[:type] %>'>
+            <%= message[:message] %>
+        </div>
+    <% end %>
     <div class='control-group'>
         <label class="control-label" >Name </label>
         <div class='controls'>
@@ -23,8 +28,15 @@
     <div class='control-group'>
         <label  class="control-label" >Any Their Name? </label>
         <div class='controls'>
-            <input type="text" name='plus-one' placeholder="Moocher's Moniker">
+            <input type="text" name='plusones' placeholder="Moocher's Moniker">
 
+        </div>
+    </div>
+
+    <div class='control-group'>
+        <label class='control-label'>What's the bride's name?</label>
+        <div class='controls'>
+            <input type="text" name='bridename' placeholder="Prove that you are human!">
         </div>
     </div>
 
