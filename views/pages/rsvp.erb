@@ -3,7 +3,7 @@
 <p>Fill out the form below. It will send us a quick email.</p>
 <form action="rsvp" method="post" class='form-horizontal'>
     <legend>RSVP</legend>
-    <% if message %>
+    <% if defined? message %>
         <div class='alert alert-<%= message[:type] %>'>
             <%= message[:message] %>
         </div>

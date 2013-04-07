@@ -1,8 +1,6 @@
 # Wedders Rakefile
 require 'fileutils'
 
-
-
 namespace :page do
 	@root = File.dirname(File.expand_path(__FILE__))
 	@pages_view_path = File.join(@root, 'views/pages')
